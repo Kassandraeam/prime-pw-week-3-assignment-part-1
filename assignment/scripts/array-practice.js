@@ -8,7 +8,7 @@ let animalArray = ['fish', 'cat', 'bird', 'dog'];
 console.log('Animals are: ', animalArray);
 
 // 1.a. TODO: Make an array with some favorite foods
-let favoriteFoods = ['Rice', 'Curry', 'Steak'];
+let favoriteFoods = ['Apples', 'Berries', 'Cranberries'];
 
 // 1.b. TODO: Log your array of foods to the console with a message, similar 
 //      to the example above
@@ -88,28 +88,43 @@ console.log(`The favorite foods array is now: ${favoriteFoods}`);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
+favoriteFoods[1] = 'Bananas';
+console.log(`Replaced the second food in the array. Now the updated array is ${favoriteFoods}`);
+
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
+let reverseAlphabeticalOrder = favoriteFoods.sort();
+reverseAlphabeticalOrder.reverse();
+console.log('Favorite Foods in reversed alphabetical order:', reverseAlphabeticalOrder);
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
+favoriteFoods.toString();
+console.log(favoriteFoods.join(' and '));
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
 //     Then log the new array.
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
+let animalsAndFood = animalArray.concat(favoriteFoods);
+console.log(animalsAndFood);
 
 /* 
 Notes
 
 some array methods:
--length:
--accessing:
--pop:
--push:
--unshift:
--shift:
+-length: in regard to arrays, it shows how many items are in the array.
+-index:
+-array.pop(): pops off the last item in an array.
+-array.push(): adds an item to the end of an array.
+-array.unshift(): adds an item to the beginning of an array.
+-array.shift(): removes the first item of an array.
+-array.sort(): sorts either alphabetically or numerically.
+-array.reverse(): inverse of sort.
+-array.toString(): converts an array to a string.
+-array.join(' xyz '): adds the xyz portion in between the items of an array. 
+-arrayOne.concat(arrayTwo): can combine two arrays to make one array.
 */
