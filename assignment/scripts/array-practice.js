@@ -117,7 +117,10 @@ Notes
 
 some array methods:
 -length: in regard to arrays, it shows how many items are in the array.
--index:
+-index: can access items of an array by using the index like so: array[0]. 
+How do I select the number? 0 is the first item in an array.
+Aside from the first item, the index of each item following that will be n+1. N being the position I want.
+So if I want the 5th item in an array, I would consider 5 as n, and add 1 to it. The number I get, 6, is what number I'd type into the brackets.
 -array.pop(): pops off the last item in an array.
 -array.push(): adds an item to the end of an array.
 -array.unshift(): adds an item to the beginning of an array.
