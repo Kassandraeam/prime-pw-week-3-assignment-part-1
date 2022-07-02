@@ -93,9 +93,17 @@ console.log('Added', favoriteFoods[1], 'to the array. The array is now: ', favor
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-let AlphabeticalOrder = favoriteFoods.sort();
-let reversedAlphabeticalOrder = AlphabeticalOrder.reverse();
-console.log('The favorite foods array in reverse alphabetical order: ', reversedAlphabeticalOrder)
+// let AlphabeticalOrder = favoriteFoods.sort();
+// let reversedAlphabeticalOrder = AlphabeticalOrder.reverse();
+// console.log('The favorite foods array in reverse alphabetical order: ', reversedAlphabeticalOrder)
+
+
+// Dane's advice on simplifying the solution!
+// let reversedAlphabeticalOrder = favoriteFoods.sort().reverse();
+// console.log(reversedAlphabeticalOrder);
+
+console.log('The favorite foods array in reverse alphabetical order: '
+, favoriteFoods.sort().reverse());
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
